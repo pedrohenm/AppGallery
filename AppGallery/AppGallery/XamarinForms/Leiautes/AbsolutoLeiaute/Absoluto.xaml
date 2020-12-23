@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Leiautes.AbsolutoLeiaute.Absoluto">
+    <ContentPage.Content>
+        <StackLayout>
+            <AbsoluteLayout BackgroundColor="#707070" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Label Text="Olá mundo!" TextColor="White" AbsoluteLayout.LayoutBounds="100, 200, 100, 50" AbsoluteLayout.LayoutFlags="None"/>
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
