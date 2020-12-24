@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Leiautes.BarraDeRolagemLeiaute.BarraDeRolagem">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <ScrollView Orientation="Both" Scrolled="ScrollView_Scrolled">
+                <StackLayout Padding="10">
+                    <BoxView Color="Black" WidthRequest="500" HeightRequest="500"/>
+                    <Label x:Name="Posicao" Text="ScrollView 01" BackgroundColor="Black" TextColor="White"/>
+                </StackLayout>
+            </ScrollView>
+            
+            <ScrollView Grid.Row="1" x:Name="BarraRolagem">
+                <StackLayout Margin="20">
+                    <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" Margin="10">
+                            <BoxView Color="Black"/>
+                            <BoxView Color="Black"/>
+                            <BoxView Color="Black"/>
+                            <BoxView Color="Black"/>
+                            <BoxView Color="Black"/>
+                            <BoxView Color="Black"/>
+                            <BoxView Color="Black"/>
+                            <BoxView Color="Black"/>
+                            <BoxView Color="Black"/>
+                            <BoxView Color="Black"/>
+                        </StackLayout>
+                    </ScrollView>
+                    <Button Text="Clique-me" BackgroundColor="Black" TextColor="White" Clicked="RolarParaSegunaLabel"/>
+
+                    <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rhoncus dui sed consectetur pellentesque. Ut a pretium velit, a volutpat enim. Duis egestas, neque sed consectetur consectetur, sem arcu eleifend nulla, et eleifend neque nisl ut ligula. Nullam vestibulum ex vitae feugiat feugiat. Etiam congue commodo dolor, eget hendrerit massa dictum ac. Nulla facilisi. Nam non erat eu nunc tincidunt faucibus. Pellentesque eu enim metus. Vivamus ut quam erat. Curabitur urna augue, commodo at ullamcorper non, dapibus eu augue.
+Morbi at est at orci posuere aliquam non eu purus. Curabitur dapibus felis mauris, et dictum mi porttitor tempor. Integer laoreet enim tincidunt metus vehicula, ac aliquet sem consectetur. Etiam vitae sodales mauris. Praesent finibus, velit vitae consectetur rhoncus, ligula metus tempus lorem, non fringilla ligula neque sed enim. Maecenas nec velit sem. Aliquam hendrerit leo et lobortis pellentesque. Aenean dolor orci, placerat in rhoncus eu, consectetur et urna. Duis in felis neque. Mauris ut tempus massa. Phasellus venenatis sit amet massa ac tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus aliquam ipsum sit amet massa hendrerit, eu tincidunt diam tincidunt. Vestibulum ut venenatis lacus. Vivamus luctus vestibulum augue, eu ultrices quam blandit vel. Vestibulum ligula augue, iaculis quis sagittis a, eleifend eu libero.
+Etiam vel finibus eros. Nullam tempor dolor in iaculis aliquet. Pellentesque tristique quam ut sollicitudin sodales. Vestibulum volutpat tortor sed massa venenatis fermentum. Morbi faucibus at sapien sed feugiat. Nulla et blandit mauris. Vestibulum suscipit lacus condimentum consectetur condimentum. Proin pulvinar nunc turpis, a posuere ipsum convallis non. Etiam luctus vitae sapien eget cursus. Phasellus a erat ac purus facilisis placerat. Phasellus ullamcorper risus at felis euismod, id mattis massa ornare. Curabitur sed neque pretium, sodales lectus tempus, lacinia nisl. Donec pretium efficitur est vitae rutrum.
+Pellentesque viverra ante id nisl efficitur, at interdum dolor congue. Aenean in dapibus mauris, in posuere elit. Quisque aliquam orci ac lacus pretium, quis tempus lacus ultricies. Donec bibendum ante lectus, at congue leo suscipit eget. Nunc convallis tristique ligula, sed blandit lectus accumsan vel. Aliquam erat volutpat. Duis at justo at lectus condimentum pretium ut et ligula. Nullam vitae turpis sapien. Duis aliquam ut arcu non facilisis. Cras porta ex nulla. Fusce dui turpis, hendrerit in mauris eget, ornare interdum turpis. Duis eget dictum erat, sit amet dignissim nisi. Aenean eu accumsan nisl.
+Duis et eleifend arcu, lacinia volutpat libero. Mauris imperdiet mauris non sapien commodo sagittis. Cras non aliquet dolor. Pellentesque diam nisl, efficitur ut nibh sit amet, maximus aliquet est. Etiam congue nisl ut velit pharetra tempor. Curabitur molestie semper nulla eu euismod. Nulla facilisi. Fusce tincidunt arcu ex, eu aliquam magna hendrerit ac. Aliquam erat volutpat. Mauris gravida egestas orci, non congue augue auctor vel. Pellentesque ut viverra elit. Quisque et lorem consequat, laoreet tortor in, consectetur erat. Proin dignissim sed eros a ultrices. Nulla ut tempus enim."
+                       Padding="20"
+                       BackgroundColor="Black"
+                       TextColor="White"/>
+
+                    <Label x:Name="SegundaLabel" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rhoncus dui sed consectetur pellentesque. Ut a pretium velit, a volutpat enim. Duis egestas, neque sed consectetur consectetur, sem arcu eleifend nulla, et eleifend neque nisl ut ligula. Nullam vestibulum ex vitae feugiat feugiat. Etiam congue commodo dolor, eget hendrerit massa dictum ac. Nulla facilisi. Nam non erat eu nunc tincidunt faucibus. Pellentesque eu enim metus. Vivamus ut quam erat. Curabitur urna augue, commodo at ullamcorper non, dapibus eu augue.
+Morbi at est at orci posuere aliquam non eu purus. Curabitur dapibus felis mauris, et dictum mi porttitor tempor. Integer laoreet enim tincidunt metus vehicula, ac aliquet sem consectetur. Etiam vitae sodales mauris. Praesent finibus, velit vitae consectetur rhoncus, ligula metus tempus lorem, non fringilla ligula neque sed enim. Maecenas nec velit sem. Aliquam hendrerit leo et lobortis pellentesque. Aenean dolor orci, placerat in rhoncus eu, consectetur et urna. Duis in felis neque. Mauris ut tempus massa. Phasellus venenatis sit amet massa ac tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus aliquam ipsum sit amet massa hendrerit, eu tincidunt diam tincidunt. Vestibulum ut venenatis lacus. Vivamus luctus vestibulum augue, eu ultrices quam blandit vel. Vestibulum ligula augue, iaculis quis sagittis a, eleifend eu libero.
+Etiam vel finibus eros. Nullam tempor dolor in iaculis aliquet. Pellentesque tristique quam ut sollicitudin sodales. Vestibulum volutpat tortor sed massa venenatis fermentum. Morbi faucibus at sapien sed feugiat. Nulla et blandit mauris. Vestibulum suscipit lacus condimentum consectetur condimentum. Proin pulvinar nunc turpis, a posuere ipsum convallis non. Etiam luctus vitae sapien eget cursus. Phasellus a erat ac purus facilisis placerat. Phasellus ullamcorper risus at felis euismod, id mattis massa ornare. Curabitur sed neque pretium, sodales lectus tempus, lacinia nisl. Donec pretium efficitur est vitae rutrum.
+Pellentesque viverra ante id nisl efficitur, at interdum dolor congue. Aenean in dapibus mauris, in posuere elit. Quisque aliquam orci ac lacus pretium, quis tempus lacus ultricies. Donec bibendum ante lectus, at congue leo suscipit eget. Nunc convallis tristique ligula, sed blandit lectus accumsan vel. Aliquam erat volutpat. Duis at justo at lectus condimentum pretium ut et ligula. Nullam vitae turpis sapien. Duis aliquam ut arcu non facilisis. Cras porta ex nulla. Fusce dui turpis, hendrerit in mauris eget, ornare interdum turpis. Duis eget dictum erat, sit amet dignissim nisi. Aenean eu accumsan nisl.
+Duis et eleifend arcu, lacinia volutpat libero. Mauris imperdiet mauris non sapien commodo sagittis. Cras non aliquet dolor. Pellentesque diam nisl, efficitur ut nibh sit amet, maximus aliquet est. Etiam congue nisl ut velit pharetra tempor. Curabitur molestie semper nulla eu euismod. Nulla facilisi. Fusce tincidunt arcu ex, eu aliquam magna hendrerit ac. Aliquam erat volutpat. Mauris gravida egestas orci, non congue augue auctor vel. Pellentesque ut viverra elit. Quisque et lorem consequat, laoreet tortor in, consectetur erat. Proin dignissim sed eros a ultrices. Nulla ut tempus enim."
+                       Padding="20"
+                       BackgroundColor="Black"
+                       TextColor="White"/>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+        
+       
+    </ContentPage.Content>
+</ContentPage>
