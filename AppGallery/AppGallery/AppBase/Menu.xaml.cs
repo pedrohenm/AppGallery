@@ -72,5 +72,11 @@ namespace AppGallery.AppBase
             ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Leiautes.RelativoLeiaute.Relativo());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
+
+        private void AbrirFlexLayout(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Leiautes.FlexivelLeiaute.Flexivel());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
     }
 }
