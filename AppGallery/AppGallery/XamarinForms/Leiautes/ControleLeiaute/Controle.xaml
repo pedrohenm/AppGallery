@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controle="clr-namespace:AppGallery.XamarinForms.Leiautes.ControleLeiaute"
+             x:Class="AppGallery.XamarinForms.Leiautes.ControleLeiaute.Controle">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="Black" Padding="20">
+                <Label Text="Titulo" TextColor="White" FontSize="36"/>
+                <Label Text="Ola ContentView, esse é um teste." TextColor="White" FontSize="18"/>
+            </StackLayout>
+            <controle:CardHorizontal/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
