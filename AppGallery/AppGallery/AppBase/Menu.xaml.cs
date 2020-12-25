@@ -90,5 +90,11 @@ namespace AppGallery.AppBase
             ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Leiautes.ControleLeiaute.Controle());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
+
+        private void AbrirFrame(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Leiautes.QuadradoLeiaute.Quadrado());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
     }
 }

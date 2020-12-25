@@ -5,11 +5,10 @@
              x:Class="AppGallery.XamarinForms.Leiautes.ControleLeiaute.Controle">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout BackgroundColor="Black" Padding="20">
-                <Label Text="Titulo" TextColor="White" FontSize="36"/>
-                <Label Text="Ola ContentView, esse é um teste." TextColor="White" FontSize="18"/>
-            </StackLayout>
-            <controle:CardHorizontal/>
+            <controle:CardHorizontal Titulo="Noticia 01" Texto ="Texto 01" Cor="Gray"/>
+            <controle:CardHorizontal Titulo="Noticia 02" Texto ="Texto 01" Cor="Gray"/>
+            <controle:CardHorizontal Titulo="Noticia 03" Texto ="Texto 01" Cor="#202020"/>
+            <controle:CardDiretor Nome="Pedro Medeiros" Descricao="Desenvolvedor de aplicativos" BoxViewColor="Blue"/>
 
         </StackLayout>
     </ContentPage.Content>

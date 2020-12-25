@@ -12,9 +12,34 @@ namespace AppGallery.XamarinForms.Leiautes.ControleLeiaute
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CardHorizontal : ContentView
     {
+        private string _titulo;
+        private string _texto;
+        private Color _cor;
+
+
+        public string Titulo 
+        { 
+            get { return _titulo; } 
+            set { _titulo = value; CardTitulo.Text = _titulo; }
+        }
+        public string Texto
+        {
+            get { return _texto; }
+            set { _texto = value; CardTexto.Text = _texto; }
+        }
+        public Color Cor
+        {
+            get { return _cor; }
+            set { _cor = value; Card.BackgroundColor = Cor; }
+        }
+
         public CardHorizontal()
         {
             InitializeComponent();
+
+            Card.BackgroundColor = Cor;
+            CardTitulo.Text = Titulo;
+            CardTexto.Text = Texto;  
         }
     }
 }

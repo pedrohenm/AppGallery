@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGallery.XamarinForms.Leiautes.ControleLeiaute.CardHorizontal">
   <ContentView.Content>
-        <StackLayout BackgroundColor="Black" Padding="20">
-            <Label Text="Titulo" TextColor="White" FontSize="36"/>
-            <Label Text="Ola ContentView, esse é um teste." TextColor="White" FontSize="18"/>
+        <StackLayout x:Name="Card" BackgroundColor="Black" Padding="20">
+            <Label x:Name="CardTitulo" Text="Titulo" TextColor="White" FontSize="36"/>
+            <Label x:Name="CardTexto" Text="Ola ContentView, esse é um teste." TextColor="White" FontSize="18"/>
         </StackLayout>
     </ContentView.Content>
 </ContentView>
